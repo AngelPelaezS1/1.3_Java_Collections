@@ -38,7 +38,7 @@ public class Main {
 
         System.out.println("Recorriendo el HashSet con Iterator:");
 Iterator<Month> iterator = monthHashSet.iterator();
-        if (iterator.hasNext()) { // Asegurarse de que el HashSet no esté vacío
+        if (iterator.hasNext()) {
            do {
         System.out.println(iterator.next());
            } while (iterator.hasNext());
