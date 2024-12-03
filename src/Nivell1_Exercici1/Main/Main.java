@@ -37,9 +37,15 @@ public class Main {
         }
 
         System.out.println("Recorriendo el HashSet con Iterator:");
-        Iterator<Month> iterator = monthHashSet.iterator();
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next());
+Iterator<Month> iterator = monthHashSet.iterator();
+        if (iterator.hasNext()) { // Asegurarse de que el HashSet no esté vacío
+           do {
+        System.out.println(iterator.next());
+           } while (iterator.hasNext());
+        } else {
+         System.out.println("El HashSet está vacío.");
+}
+
         }
     }
 }
